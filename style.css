@@ -1,9 +1,26 @@
 h1 {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
-p {
+p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body {
+  padding: 15px;
   background-color: #B27C66;
+}
+#minha-foto {
+  float: left;
+  padding: 15px;
+  background-color: cadetblue;
+  position: relative;
+}
+#descriçao {
+  position: absolute;
+  top: 25%;
+  left: 22%;
+}
+.info-adicional {
+  position: absolute;
+  top: 400px;
 }
