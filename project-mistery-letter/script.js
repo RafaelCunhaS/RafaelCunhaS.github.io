@@ -3,9 +3,9 @@ const btnCreate = document.getElementById('criar-carta');
 const letter = document.getElementById('carta-gerada');
 const counter = document.getElementById('carta-contador');
 
-function count(array) {
-  counter.innerText = array.length;
-}
+// function count(array) {
+//   counter.innerText = array.length;
+// }
 function randomClasses(span) {
   const group1 = ['newspaper', 'magazine1', 'magazine2'];
   const group2 = ['medium', 'big', 'reallybig'];
@@ -28,7 +28,7 @@ function letterContent() {
       letterText.innerText = array[i];
       letter.appendChild(letterText);
     }
-    count(array);
+    // count(array);
   }
 }
 
@@ -41,8 +41,10 @@ btnCreate.addEventListener('click', () => {
 });
 
 letter.addEventListener('click', (e) => {
-  while (e.target.classList.length > 0) {
-    const removeClass = e.target.classList.item(0);
-    e.target.classList.remove(removeClass);
-  } randomClasses(e.target);
+  if (e.target.tagName === 'SPAN') {
+    while (e.target.classList.length > 0) {
+      const removeClass = e.target.classList.item(0);
+      e.target.classList.remove(removeClass);
+    } randomClasses(e.target);
+  }
 });
