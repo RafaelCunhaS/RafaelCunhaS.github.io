@@ -26,6 +26,12 @@ header {
   margin: 0 20px;
 }
 
+.selected {
+  height: 58px;
+  width: 58px;
+  border: 2px solid black;
+}
+
 #pixel-board {
   display: table;
   border-spacing: 0;

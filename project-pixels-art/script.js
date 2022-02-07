@@ -45,7 +45,9 @@ function select(e) {
       loop[i].className = 'color';
     }
   }
-  e.target.className += ' selected';
+  if (e.target.id !== 'color-palette') {
+    e.target.className += ' selected';
+  }
 }
 selectColor.addEventListener('click', select);
 
