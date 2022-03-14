@@ -13,7 +13,7 @@ function randomColor() {
 function createCircles() {
   for (let i = 0; i < 6; i += 1) {
     const circle = document.createElement('span');
-    circle.className = 'ball';
+    circle.className = 'circles';
     circle.style.backgroundColor = `rgb${randomColor()}`;
     colors.appendChild(circle);
   }
@@ -30,12 +30,12 @@ setAnswer();
 colors.addEventListener('click', (e) => {
   if (e.target.tagName === 'SPAN') {
     if (e.target.id === 'right-color') {
-      answer.innerText = 'Acertou!';
+      answer.innerText = 'Correct!';
       let toNumber = Number(score.innerText);
       toNumber += 3;
       score.innerText = toNumber;
     } else {
-      answer.innerText = 'Errou! Tente novamente!';
+      answer.innerText = 'Wrong! Try Again!';
     }
   }
 });
@@ -45,9 +45,10 @@ function clearAll() {
     colors.removeChild(colors.firstElementChild);
   }
 }
+
 btnReset.addEventListener('click', () => {
   clearAll();
   createCircles();
   setAnswer();
-  answer.innerText = 'Escolha uma cor';
+  answer.innerText = 'Choose a color';
 });
