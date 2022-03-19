@@ -1,7 +1,72 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  color: #3c345c;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: fit-content;
+  margin: 1rem auto;
+}
+
+.input input {
+  padding: 0 0.5rem;
+  height: 1.8rem;
+  width: 15rem;
+  font-size: 0.9rem;
+  border: none;
+  background-color: rgba(22, 62, 99, 0.1);
+  border-bottom: 2px solid black;
+  /* border-radius: 5px; */
+}
+
+#lista-tarefas {
+  width: 70%;
+  margin: auto;
+}
+
+#lista-tarefas li {
+  text-align: center;
+  color: #124c81;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
 .background {
-  background-color: gray;
+  background-color: rgba(22, 62, 99, 0.1);
 }
 
 .completed {
   text-decoration: line-through solid black;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: #99a8bb;
+  border: none;
+  color: #2d293f;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.95rem;
 }

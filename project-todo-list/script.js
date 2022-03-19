@@ -7,6 +7,7 @@ const btnStorage = document.getElementById('salvar-tarefas');
 const btnMoveUp = document.getElementById('mover-cima');
 const btnMoveDown = document.getElementById('mover-baixo');
 const btnRemove = document.getElementById('remover-selecionado');
+
 function createTask() {
   const tarefa = document.createElement('li');
   tarefa.innerText = input.value;

@@ -5,24 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>To do List</title>
+  <title>To Do List</title>
 </head>
 <body>
-  <header>
-    <h1>Minha Lista de Tarefas</h1>
-    <h3 id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</h3>
-  </header>
-  <main>
-    <input type="text" id="texto-tarefa"><button id="criar-tarefa">Criar</button>
-    <ol id="lista-tarefas">
-    </ol>
-    <button id="apaga-tudo">Apagar lista</button>
-    <button id="remover-finalizados">Limpar tarefas completas</button>
-    <button id="salvar-tarefas">Salvar tarefas</button>
-    <button id="mover-cima">Mover tarefa para cima</button>
-    <button id="mover-baixo">Mover tarefa para baixo</button>
-    <button id="remover-selecionado">Remover</button>
-  </main>
+  <div class="container">
+    <header class="header">
+      <h1>My Task List</h1>
+      <h3 id="funcionamento">Click twice on an item to mark it as completed</h3>
+    </header>
+    <main class="main">
+      <div class="input">
+        <input type="text" id="texto-tarefa" placeholder="Task">
+        <button class="button" id="criar-tarefa">Add</button>
+      </div>
+      <ol id="lista-tarefas">
+      </ol>
+      <div class="buttons">
+        <button class="button" id="apaga-tudo">Erase list</button>
+        <button class="button" id="remover-finalizados">Clear completed tasks</button>
+        <button class="button" id="salvar-tarefas">Save tasks</button>
+        <button class="button" id="mover-cima">Move task up</button>
+        <button class="button" id="mover-baixo">Move task down</button>
+        <button class="button" id="remover-selecionado">Remove</button>
+      </div>
+    </main>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
